@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0sS-5Z-ZjL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,102 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="foodclub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1024" translatesAutoresizingMaskIntoConstraints="NO" id="zvt-E3-gyg">
+                                <rect key="frame" x="0.0" y="217" width="391" height="348"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyd-PV-FU6">
+                                <rect key="frame" x="71" y="647" width="272" height="76"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.16470588235294117" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4i-Ys-EDA">
+                                <rect key="frame" x="229" y="737" width="152" height="34"/>
+                                <state key="normal" title="Create account">
+                                    <color key="titleColor" red="0.87843137250000003" green="0.1647058824" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can't logIn?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHg-3y-V3n">
+                                <rect key="frame" x="135" y="744" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G4i-Ys-EDA" firstAttribute="top" secondItem="dyd-PV-FU6" secondAttribute="bottom" constant="14" id="4lC-BH-pdj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G4i-Ys-EDA" secondAttribute="bottom" constant="91" id="5dB-e9-W6W"/>
+                            <constraint firstItem="dyd-PV-FU6" firstAttribute="top" secondItem="zvt-E3-gyg" secondAttribute="bottom" constant="81" id="5pf-GT-0qX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dyd-PV-FU6" secondAttribute="trailing" constant="71" id="Tjj-eI-GG7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qHg-3y-V3n" secondAttribute="bottom" constant="97" id="cAr-Yr-AIB"/>
+                            <constraint firstItem="qHg-3y-V3n" firstAttribute="top" secondItem="dyd-PV-FU6" secondAttribute="bottom" constant="21" id="g8o-H0-0jG"/>
+                            <constraint firstItem="G4i-Ys-EDA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="229" id="i8L-4E-gQz"/>
+                            <constraint firstItem="dyd-PV-FU6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="kk5-cT-RMQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zvt-E3-gyg" secondAttribute="trailing" constant="23" id="lLr-7F-aMM"/>
+                            <constraint firstItem="zvt-E3-gyg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lji-VG-p4g"/>
+                            <constraint firstItem="dyd-PV-FU6" firstAttribute="top" secondItem="zvt-E3-gyg" secondAttribute="bottom" constant="81" id="qnR-97-itf"/>
+                            <constraint firstItem="qHg-3y-V3n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="tnK-1P-b53"/>
+                            <constraint firstItem="zvt-E3-gyg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="174" id="unR-kD-x3s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dyd-PV-FU6" secondAttribute="bottom" constant="139" id="vVs-wM-40e"/>
+                            <constraint firstItem="G4i-Ys-EDA" firstAttribute="leading" secondItem="qHg-3y-V3n" secondAttribute="trailing" constant="4" id="vni-SV-ECy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G4i-Ys-EDA" secondAttribute="trailing" constant="33" id="xPL-w5-uXX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jIN-4R-DIS"/>
+                    <connections>
+                        <outlet property="logInButton" destination="dyd-PV-FU6" id="hko-1B-uia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Hqw-MY-8Wa">
+            <objects>
+                <viewController id="ZCS-fN-NTV" customClass="SignUpViewController" customModule="foodclub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXl-4M-1Gc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="w37-4x-pqO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zo0-xq-9Ri"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipn-Ti-VAQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876.8115942028987" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pF1-79-C6u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0sS-5Z-ZjL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SAt-AD-h2K">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vxa-vO-aB8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPg-5h-mpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1024" width="1024" height="1024"/>
+    </resources>
 </document>
