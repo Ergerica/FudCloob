@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var textfield: UITextField!
+    
     @IBOutlet var logInButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         logInButton.layer.cornerRadius = 4
     }
 
